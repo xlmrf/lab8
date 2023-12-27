@@ -1,3 +1,4 @@
+import("./aes_enc_block.js")
 function aes_ctr_encrypt(plaintext, key, nonce) {
     function incCounter(counter) {
         for (let i = counter.length - 1; i >= 0; i--) {
@@ -35,9 +36,4 @@ function aes_ctr_encrypt(plaintext, key, nonce) {
     }
 
     return ciphertext;
-}
-
-function aes_encrypt_block(block, key) {
-    import("./aes_enc_block.js")
-    return block
 }
