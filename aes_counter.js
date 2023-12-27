@@ -38,6 +38,6 @@ function aes_ctr_encrypt(plaintext, key, nonce) {
 }
 
 function aes_encrypt_block(block, key) {
-    import("./aes_enc_block")
+    import("./aes_enc_block.js")
     return block
 }
